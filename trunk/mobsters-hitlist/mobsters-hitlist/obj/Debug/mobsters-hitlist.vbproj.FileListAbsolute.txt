@@ -1,0 +1,10 @@
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\bin\Debug\mobsters-hitlist.exe
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\bin\Debug\mobsters-hitlist.pdb
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\bin\Debug\mobsters-hitlist.xml
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\obj\Debug\ResolveAssemblyReference.cache
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\obj\Debug\mobsters_hitlist.frmMain.resources
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\obj\Debug\mobsters_hitlist.Resources.resources
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\obj\Debug\mobsters-hitlist.vbproj.GenerateResource.Cache
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\obj\Debug\mobsters-hitlist.exe
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\obj\Debug\mobsters-hitlist.xml
+C:\Data\googleCode\mobsters-hitlist\mobsters-hitlist\obj\Debug\mobsters-hitlist.pdb
