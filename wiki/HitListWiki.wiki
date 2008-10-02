@@ -1,13 +1,10 @@
 #summary A bot that automatically attacks from the hit list
-A bot that automatically attacks from the hit list
+
 = Introduction =
 
-Add your content here.
+This utility acts as a bot, refreshing the Hit List every 500ms (2 times per second) and clicking on Attach after the page loads. 
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*More Info Coming Soon*
