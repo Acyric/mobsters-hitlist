@@ -29,6 +29,8 @@ Partial Class frmMain
         Me.btnRefresh = New System.Windows.Forms.Button
         Me.btnAttack = New System.Windows.Forms.Button
         Me.btnExit = New System.Windows.Forms.Button
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.txtDelay = New System.Windows.Forms.TextBox
         Me.SuspendLayout()
         '
         'btnStart
@@ -75,6 +77,24 @@ Partial Class frmMain
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(416, 72)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(109, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Speed in Milliseconds"
+        '
+        'txtDelay
+        '
+        Me.txtDelay.Location = New System.Drawing.Point(529, 69)
+        Me.txtDelay.Name = "txtDelay"
+        Me.txtDelay.Size = New System.Drawing.Size(73, 20)
+        Me.txtDelay.TabIndex = 5
+        Me.txtDelay.Text = "500"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -82,7 +102,9 @@ Partial Class frmMain
         Me.BackColor = System.Drawing.Color.Black
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(615, 75)
+        Me.ClientSize = New System.Drawing.Size(615, 94)
+        Me.Controls.Add(Me.txtDelay)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnAttack)
         Me.Controls.Add(Me.btnRefresh)
@@ -93,6 +115,7 @@ Partial Class frmMain
         Me.Text = "Mobsters Hit-List"
         Me.TopMost = True
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnStart As System.Windows.Forms.Button
@@ -100,5 +123,7 @@ Partial Class frmMain
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
     Friend WithEvents btnAttack As System.Windows.Forms.Button
     Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtDelay As System.Windows.Forms.TextBox
 
 End Class
