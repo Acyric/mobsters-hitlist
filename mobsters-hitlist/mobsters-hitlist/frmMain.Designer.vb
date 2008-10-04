@@ -23,34 +23,82 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me.Button1 = New System.Windows.Forms.Button
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
+        Me.btnStart = New System.Windows.Forms.Button
         Me.tRefresh = New System.Windows.Forms.Timer(Me.components)
+        Me.btnRefresh = New System.Windows.Forms.Button
+        Me.btnAttack = New System.Windows.Forms.Button
+        Me.btnExit = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
-        'Button1
+        'btnStart
         '
-        Me.Button1.Location = New System.Drawing.Point(111, 27)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Start"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnStart.BackColor = System.Drawing.Color.DimGray
+        Me.btnStart.Enabled = False
+        Me.btnStart.Location = New System.Drawing.Point(528, 12)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(75, 22)
+        Me.btnStart.TabIndex = 0
+        Me.btnStart.Text = "Start"
+        Me.btnStart.UseVisualStyleBackColor = False
         '
         'tRefresh
         '
+        '
+        'btnRefresh
+        '
+        Me.btnRefresh.BackColor = System.Drawing.Color.DimGray
+        Me.btnRefresh.Location = New System.Drawing.Point(419, 12)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(103, 22)
+        Me.btnRefresh.TabIndex = 1
+        Me.btnRefresh.Text = "Calibrate Refresh"
+        Me.btnRefresh.UseVisualStyleBackColor = False
+        '
+        'btnAttack
+        '
+        Me.btnAttack.BackColor = System.Drawing.Color.DimGray
+        Me.btnAttack.Location = New System.Drawing.Point(419, 40)
+        Me.btnAttack.Name = "btnAttack"
+        Me.btnAttack.Size = New System.Drawing.Size(103, 22)
+        Me.btnAttack.TabIndex = 2
+        Me.btnAttack.Text = "Calibrate Attack"
+        Me.btnAttack.UseVisualStyleBackColor = False
+        '
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.Color.DimGray
+        Me.btnExit.Location = New System.Drawing.Point(528, 40)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 22)
+        Me.btnExit.TabIndex = 3
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(292, 79)
-        Me.Controls.Add(Me.Button1)
+        Me.BackColor = System.Drawing.Color.Black
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.ClientSize = New System.Drawing.Size(615, 75)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnAttack)
+        Me.Controls.Add(Me.btnRefresh)
+        Me.Controls.Add(Me.btnStart)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Mobsters Hit-List"
+        Me.TopMost = True
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnStart As System.Windows.Forms.Button
     Friend WithEvents tRefresh As System.Windows.Forms.Timer
+    Friend WithEvents btnRefresh As System.Windows.Forms.Button
+    Friend WithEvents btnAttack As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 
 End Class
