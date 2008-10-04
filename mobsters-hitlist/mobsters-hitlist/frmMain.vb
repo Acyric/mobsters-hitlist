@@ -19,7 +19,7 @@ Public Class frmMain
     Private Declare Sub SendMessage Lib "user32" Alias "SendMessageA" (ByVal hWnd As Integer, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnStart.Click
         MsgBox("The Bot is armed. It will run whenever Caps Lock is turned on")
-        tRefresh.Interval = 500
+        tRefresh.Interval = txtDelay.Text
         tRefresh.Enabled = True
         tRefresh.Start()
         btnStart.Enabled = False
@@ -31,6 +31,20 @@ Public Class frmMain
             mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
             mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
             Dim I As Integer
+            Do While I < 1500
+                I += 0.75
+            Loop
+            I = 0
+            SetCursorPos(attackX, attackY)
+            mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
+            mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
+            Do While I < 1500
+                I += 0.75
+            Loop
+            I = 0
+            SetCursorPos(attackX, attackY)
+            mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0)
+            mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0)
             Do While I < 1500
                 I += 0.75
             Loop
@@ -80,5 +94,12 @@ Public Class frmMain
             ReleaseCapture()
             SendMessage(Me.Handle.ToInt32, WM_NCLBUTTONDOWN, HTCAPTION, 0&)
         End If
+    End Sub
+
+    Private Sub txtDelay_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtDelay.TextChanged
+        If txtDelay.Text = "" Then
+            txtDelay.Text = 1
+        End If
+        tRefresh.Interval = txtDelay.Text
     End Sub
 End Class
